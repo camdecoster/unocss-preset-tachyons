@@ -1,0 +1,49 @@
+{
+  "name": "unocss-preset-tachyons",
+  "version": "0.0.0",
+  "description": "An UnoCSS Preset for the Tachyons utility CSS toolkit",
+  "author": "Cameron DeCoster",
+  "homepage": "https://github.com/camdecoster/unocss-preset-tachyons#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/camdecoster/unocss-preset-tachyons.git"
+  },
+  "bugs": {
+    "url": "https://github.com/camdecoster/unocss-preset-tachyons/issues"
+  },
+  "keywords": [
+    "tachyons",
+    "unocss",
+    "unocss-preset",
+    "unocss-preset-tachyons"
+  ],
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "*.css",
+    "*.d.ts",
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "stub": "unbuild --stub"
+  },
+  "devDependencies": {
+    "@stylistic/eslint-plugin": "^1.5.1",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "@unocss/core": "^0.58.0",
+    "eslint": "^8.56.0",
+    "eslint-config-standard-with-typescript": "^43.0.0",
+    "typescript": "^5.3.3",
+    "unbuild": "^2.0.0"
+  }
+}
